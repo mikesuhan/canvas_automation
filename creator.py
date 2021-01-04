@@ -1,11 +1,3 @@
-"""
-from creator import *
-d = {'zoomId': '6038224458', 'zoomPasswordId': 'bDhDL3ZVR29ydWVKMWZoRS9CMWxsQT09', 'sketchcodes': 'sc/S2-AE2B.tsv'}
-ld = datetime.datetime(2020, 12, 18)
-fd = datetime.datetime(2020, 10, 26)
-add_courses('course_574', fd, ld, d, ('Mon', '8am', '9:50am'), ('Tues', '8am', '9:50am'), ('Wed', '8am', '9:50am'), ('Thur', '8am', '9:50am'), ('Fri', '8am', '9:50am'))
-"""
-
 from time import sleep
 import datetime
 from collections import defaultdict
