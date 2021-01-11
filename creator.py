@@ -6,7 +6,7 @@ from canvasapi import Canvas
 from planner import date_range, session_range
 
 
-SL_HOLIDAYS = (datetime.datetime(2020, 11, 11),   # veterans day
+SL_HOLIDAYS = (datetime.datetime(2021, 1, 1),   # veterans day
                datetime.datetime(2020, 11, 12),
                datetime.datetime(2020, 11, 19),
                datetime.datetime(2020, 12, 3),
@@ -114,7 +114,7 @@ def add_courses(context_code, first_day, last_day, description_data, *times, les
     # adds sessions to calendar
     for start_at, end_at in sessions:
         # makes description
-        description = '<p>zoomId: {zid}</p><p>sketchId: {sid}</p><p>zoomPasswordId: {zpwid}</p>'.format(
+        description = '<p>zoomId: {zid}</p>\n<p>sketchId: {sid}</p>\n<p>zoomPasswordId: {zpwid}</p>'.format(
             zid=description_data.get('zoomId', ''),
             sid=sketchcodes[lesson_i-1],
             zpwid=description_data.get('zoomPasswordId', '')
